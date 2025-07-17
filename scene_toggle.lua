@@ -78,10 +78,7 @@ function script_properties()
     end
     obs.obs_properties_add_text(props, "inc-tooltip-a", "On -> Swap to scene A if on anything but scene A", obs.OBS_TEXT_INFO)
     obs.obs_properties_add_text(props, "inc-tooltip-b", "Off -> Swap to scene A only if on scene B", obs.OBS_TEXT_INFO)
-    local prob_inc = obs.obs_properties_add_bool(props, "inclusive", "Inclusive scene switching")
-
-    print(hotkey_id)
-
+    local prop_inc = obs.obs_properties_add_bool(props, "inclusive", "Inclusive scene switching")
     return props
 end
 
